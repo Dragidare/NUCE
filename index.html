@@ -45,10 +45,10 @@ var deadline = 'Januar 31 2016 00:00:50 UTC+0200';
 initializeClock('clockdiv', deadline);
 
     </script>
-    
-    
-    
-<style> 
+
+
+
+<style>
 .flex-container {
     display: -webkit-flex;
     display: flex;
@@ -65,7 +65,7 @@ initializeClock('clockdiv', deadline);
     width: 30%;
     height: 90%;
     margin: 10px;
-z-index: 2;  
+z-index: 2;
     transition: width 2s;
 }
 .flex-item2 {
@@ -73,7 +73,7 @@ z-index: 2;
     width: 30%;
     height: 90%;
     margin: 10px;
-z-index: 1;  
+z-index: 1;
     transition: width 2s;
 }
     div.flex-item:hover {
@@ -106,19 +106,20 @@ z-index: 1;
 	padding-top: 5px;
 	font-size: 16px;
 }
-    
+
 </style>
 </head>
-<body>
+<body onload="initializeClock('clockdiv', deadline)">
 
 <div class="flex-container">
   <div class="flex-item">flex item 1</div>
   <div class="flex-item">flex item 2</div>
-  <div class="flex-item">flex item 3</div>  
+  <div class="flex-item">flex item 3</div>
   <div class="flex-item2">flex item 4</div>
   <div class="flex-item2">flex item 5</div>
   <div class="flex-item2">flex item 6</div>
 </div>
+
 <div id="clockdiv">
   <div>
     <span class="days"></span>
